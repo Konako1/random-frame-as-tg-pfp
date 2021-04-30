@@ -117,3 +117,7 @@ dmypy.json
 .idea/bad apple project.iml
 .idea/misc.xml
 .idea/modules.xml
+my_account.session
+config.py
+bad_apple.bat
+image/pic.jpg
