@@ -18,3 +18,11 @@ def get_bad_apple_frame():
         cv2.imwrite('image\\pic.jpg', gray)
         print('done!\n')
         break
+
+
+def get_every_bad_apple_frame():
+    for i in range(video_length):
+        ret, frame = cap.read()
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        cv2.imwrite('all_frames\\pic' + str(i) + '.jpg', gray)
+    print('done!')
